@@ -9,7 +9,7 @@ const prompt = require('prompt-sync')();
 
 let sumOfUserValues = 0;
 let userInputNumber;
-let continueEnterMoreNumbers = false; //como flag para continuar ou parar o loop.
+let continueEnterMoreNumbers = false; //como flag para continuar ou parar o loop. Inicialmente, a flag "continueEnterMoreNumbers" é definida como false, indicando que o loop não deve continuar executando.
 let minValue = Infinity; //para armazenar o menor valor digitado, inicializado com Infinity.
 let countValues = 0; //para contar quantos números foram digitados.
 let countEvenNumbers = 0; //para contar quantos números pares foram digitados.
@@ -35,7 +35,8 @@ do{
 
     //Perguntar se o usuário que continuar
     let userResponse = prompt("You have to enter more numbers? (yes/no) ").toLowerCase();
-    if(userResponse !== "yes"){
+    if(userResponse !== "yes"){ //O loop "do-while" executa o bloco de código dentro do "do" pelo menos uma vez e continua repetindo enquanto a condição no while for false.
+        //Se a resposta for diferente de "yes", a flag continueEnterMoreNumbers é definida como true:
         continueEnterMoreNumbers = true;
     }
 }while(!continueEnterMoreNumbers){
