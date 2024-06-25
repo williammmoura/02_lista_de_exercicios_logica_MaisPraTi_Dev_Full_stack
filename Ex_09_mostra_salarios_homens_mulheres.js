@@ -30,7 +30,7 @@ while(keepAsking){
         userChoice = parseInt(prompt("Enter the corresponding option number:"));
 
         //validação da escolha entre as opções oferecidas
-        if(!isNaN(userChoice) && userChoice >= 0 && userChoice <= 1){ //a entrada não é "NaN" (ou seja, é um número).
+        if(!isNaN(userChoice) && userChoice >= 0 && userChoice <= 1){ //A entrada não é "NaN" (ou seja, é um número).
             validChoice = true; //Sai do loop.
         }else{
             console.log("Invalid choice! Please, enter a number between 0 and 1.");
