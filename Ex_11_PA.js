@@ -12,7 +12,7 @@ let sum = 0;
 
 //Calcula os primeiros 10 termos e soma eles
 for(let i = 0; i <= 10; i++){
-    let term = firstTermOfArithmeticProgression + i * arithmeticProgressionRatio; //Calculo do terml atual da PA
+    let term = firstTermOfArithmeticProgression + i * arithmeticProgressionRatio; //Calculo do term atual da PA
     APTerms.push(term); // Adiciona o termo calculado ao final do array "APTerms".
     sum += term; //Adiciona o valor do termo à variável sum, que mantém a soma de todos os termos.
 }
