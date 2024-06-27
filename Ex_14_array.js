@@ -13,7 +13,6 @@ for(let i = 0; i < 7; i++){
 
 //Mostrar nomes na ordem inversa
 console.log("Names in reverse order:");
-for (let i = listNames.length - 1; i >= 0; i--) {//"let i = listNames.length - 1": Inicia o índice i no último elemento do vetor.
+for(let i = listNames.length - 1; i >= 0; i--) {//"let i = listNames.length - 1": Inicia o índice i no último elemento do vetor.
     console.log(listNames[i]);
-  }
-
+}
