@@ -14,13 +14,13 @@ const search = () => {
     let totalChildren = 0;
     //Para rastrear o maior salário registrado.
     let highestSalary = 0;
-    //Para contar quantas pessoas têm salário até R$ 350,00.
+    //Para contar quantas pessoas têm salário até US$ 350.00.
     let salaryUpto350 = 0;
     //Para contar o número total de pessoas.
     let totalPeople = 0;
 
     //Validação das entradas
-    while(true){//O loop só é interrompido quando o usuário escolhe parar a inserção de dados, digitando 'n' em resposta à pergunta "Deseja fornecer dados de mais uma pessoa? (s/n): ".
+    while(true){//O loop só é interrompido quando o usuário escolhe parar a inserção de dados, digitando 'n' em resposta à pergunta "Do you want to provide information about one more person? (y/n): ".
 
         //Leitura e validação do salário
         let inputSalary;
@@ -53,7 +53,7 @@ const search = () => {
         if(inputSalary <= 350){// "salaryUpto350" é incrementado se o salário atual for menor ou igual a R$ 350,00.
             salaryUpto350++;
         }
-        totalPeople++;// totalPeople é incrementado para contabilizar a pessoa atual.
+        totalPeople++;// "totalPeople" é incrementado para contabilizar a pessoa atual.
 
         //Pergunta ao usuário se deseja continuar
         let proceed;
